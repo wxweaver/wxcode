@@ -17,7 +17,7 @@
 #include "wx/filedlg.h"
 #include "wx/textdlg.h"
 #include "wx/generic/filedlgg.h"
-#include "wx/things/thingdef.h"
+#include "wxcode/things/thingdef.h"
 
 class WXDLLEXPORT wxCheckBox;
 class WXDLLEXPORT wxComboBox;

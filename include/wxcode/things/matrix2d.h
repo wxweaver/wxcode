@@ -9,7 +9,7 @@
 #ifndef __WXTHINGS_MATRIX2D_H__
 #define __WXTHINGS_MATRIX2D_H__
 
-#include "wx/things/thingdef.h"
+#include "wxcode/things/thingdef.h"
 #include "wx/object.h"
 #include "wx/arrstr.h"
 #include "wx/gdicmn.h" // for wxSize

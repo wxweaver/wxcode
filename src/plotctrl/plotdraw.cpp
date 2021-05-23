@@ -26,12 +26,12 @@
 
 #include "wx/math.h"
 
-#include "wx/plotctrl/plotdraw.h"
-#include "wx/plotctrl/plotctrl.h"
-#include "wx/plotctrl/plotmark.h"
-#include "wx/plotctrl/plotcurv.h"
-#include "wx/plotctrl/plotdata.h"
-#include "wx/plotctrl/plotfunc.h"
+#include "wxcode/plotctrl/plotdraw.h"
+#include "wxcode/plotctrl/plotctrl.h"
+#include "wxcode/plotctrl/plotmark.h"
+#include "wxcode/plotctrl/plotcurv.h"
+#include "wxcode/plotctrl/plotdata.h"
+#include "wxcode/plotctrl/plotfunc.h"
 
 #include <math.h>
 #include <float.h>

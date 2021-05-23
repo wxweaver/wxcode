@@ -28,7 +28,7 @@
 #include "wx/tglbtn.h"
 #include "wx/image.h"
 #include "wx/renderer.h"
-#include "wx/things/toggle.h"
+#include "wxcode/things/toggle.h"
 
 // ==========================================================================
 // wxCustomButton

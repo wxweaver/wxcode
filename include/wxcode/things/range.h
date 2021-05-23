@@ -10,7 +10,7 @@
 #ifndef __WX_RANGE_H__
 #define __WX_RANGE_H__
 
-#include "wx/things/thingdef.h"
+#include "wxcode/things/thingdef.h"
 
 class WXDLLIMPEXP_THINGS wxRangeInt;
 class WXDLLIMPEXP_THINGS wxRangeDouble;

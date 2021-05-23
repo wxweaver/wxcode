@@ -31,10 +31,10 @@
 #include "wx/textfile.h"
 #include "wx/math.h"
 
-#include "wx/plotctrl/plotdata.h"
-#include "wx/plotctrl/fourier.h"
-#include "wx/things/medsort.h"
-#include "wx/things/range.h"
+#include "wxcode/plotctrl/plotdata.h"
+#include "wxcode/plotctrl/fourier.h"
+#include "wxcode/things/medsort.h"
+#include "wxcode/things/range.h"
 #include <math.h>
 
 #define wxPLOTDATA_MAX_DATA_COLUMNS 64

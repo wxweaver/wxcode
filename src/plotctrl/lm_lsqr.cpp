@@ -26,8 +26,8 @@
 
 #include "wx/math.h"
 
-#include "wx/plotctrl/lm_lsqr.h"
-#include "wx/plotctrl/plotdata.h"
+#include "wxcode/plotctrl/lm_lsqr.h"
+#include "wxcode/plotctrl/plotdata.h"
 
 #undef BUG
 #define BUG 0

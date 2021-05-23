@@ -7,7 +7,7 @@
 /////////////////////////////////////////////////////////////////////////////
 
 #include <wx/wxprec.h>
-#include "wx/awx/led.h"
+#include "wxcode/awx/led.h"
 #include "leds.xpm"
 
 BEGIN_EVENT_TABLE(awxLed, wxWindow)

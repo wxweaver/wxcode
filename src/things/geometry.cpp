@@ -13,7 +13,7 @@
     #pragma hdrstop
 #endif
 
-#include "wx/things/geometry.h"
+#include "wxcode/things/geometry.h"
 
 /*
 2.4 : How do I generate a circle through three points?

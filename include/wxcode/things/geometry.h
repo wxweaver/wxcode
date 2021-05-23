@@ -11,7 +11,7 @@
 #define __WXIMAGER_GEOMETRY_H__
 
 #include "wx/geometry.h"
-#include "wx/things/thingdef.h"
+#include "wxcode/things/thingdef.h"
 
 #define wxGEOMETRY_INF 1E100
 

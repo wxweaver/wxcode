@@ -26,8 +26,8 @@ arrows.
 #ifndef _WX_BMPCOMBO_H_
 #define _WX_BMPCOMBO_H_
 
-#include "wx/things/thingdef.h"
-#include "wx/things/dropdown.h"
+#include "wxcode/things/thingdef.h"
+#include "wxcode/things/dropdown.h"
 
 #if wxUSE_POPUPWIN
 

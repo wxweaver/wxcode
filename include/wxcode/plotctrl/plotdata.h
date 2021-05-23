@@ -16,8 +16,8 @@
 #endif
 
 #include "wx/txtstrm.h"            // for wxEOL
-#include "wx/plotctrl/plotcurv.h"  // includes plotdefs.h
-#include "wx/plotctrl/plotfunc.h"
+#include "wxcode/plotctrl/plotcurv.h"  // includes plotdefs.h
+#include "wxcode/plotctrl/plotfunc.h"
 
 class WXDLLIMPEXP_THINGS wxRangeIntSelection;
 class WXDLLIMPEXP_PLOTCTRL wxPlotData;

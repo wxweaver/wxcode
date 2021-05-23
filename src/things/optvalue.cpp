@@ -20,7 +20,7 @@
 #endif // WX_PRECOMP
 
 #include "wx/tokenzr.h"
-#include "wx/things/optvalue.h"
+#include "wxcode/things/optvalue.h"
 
 #include "wx/arrimpl.cpp"
 WX_DEFINE_OBJARRAY(wxArrayOptionValue);

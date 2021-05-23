@@ -35,7 +35,7 @@
 #include <stdio.h>
 #include <math.h>
 
-#include "wx/plotctrl/fourier.h"
+#include "wxcode/plotctrl/fourier.h"
 
 #define BITS_PER_WORD   (sizeof(unsigned) * 8)
 #define DDC_PI          (3.14159265358979323846)

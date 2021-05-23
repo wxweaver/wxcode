@@ -25,8 +25,8 @@
     #include "wx/dc.h"
 #endif // WX_PRECOMP
 
-#include "wx/things/toggle.h"
-#include "wx/things/menubtn.h"
+#include "wxcode/things/toggle.h"
+#include "wxcode/things/menubtn.h"
 
 /* XPM */
 static const char *down_arrow_xpm_data[] = {

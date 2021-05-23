@@ -28,10 +28,10 @@
 #include "xrcconv.h"
 #include "default.xpm"
 
-#include <wx/plotctrl/plotctrl.h>
-#include <wx/awx/led.h>
-#include <wx/ledbargraph/ledbargraph.h>
-#include <wx/treelistctrl/treelistctrl.h>
+#include <wxcode/plotctrl/plotctrl.h>
+#include <wxcode/awx/led.h>
+#include <wxcode/ledbargraph/ledbargraph.h>
+#include <wxcode/treelistctrl/treelistctrl.h>
 
 // wxFlatNotebook
 #include <wx/wxFlatNotebook/wxFlatNotebook.h>

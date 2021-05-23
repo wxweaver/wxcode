@@ -27,8 +27,8 @@
 #include "wx/module.h"
 #include "wx/printdlg.h"
 
-#include "wx/plotctrl/plotprnt.h"
-#include "wx/plotctrl/plotctrl.h"
+#include "wxcode/plotctrl/plotprnt.h"
+#include "wxcode/plotctrl/plotctrl.h"
 
 //-----------------------------------------------------------------------------
 // wxPlotPrintout

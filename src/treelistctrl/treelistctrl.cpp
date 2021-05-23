@@ -54,7 +54,7 @@
 #include "wx/mac/private.h"
 #endif
 
-#include "wx/treelistctrl/treelistctrl.h"
+#include "wxcode/treelistctrl/treelistctrl.h"
 
 namespace wxcode 
 {

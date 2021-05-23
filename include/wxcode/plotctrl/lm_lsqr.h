@@ -30,7 +30,7 @@
     #pragma interface "lm_lsqr.h"
 #endif
 
-#include "wx/plotctrl/plotdefs.h"
+#include "wxcode/plotctrl/plotdefs.h"
 class WXDLLIMPEXP_PLOTCTRL wxPlotData;
 class WXDLLIMPEXP_PLOTCTRL wxPlotFunction;
 

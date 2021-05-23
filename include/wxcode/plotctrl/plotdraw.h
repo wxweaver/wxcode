@@ -15,10 +15,10 @@
     #pragma interface "plotdraw.h"
 #endif
 
-#include "wx/plotctrl/plotdefs.h"
-#include "wx/plotctrl/plotmark.h"
-#include "wx/things/genergdi.h"
-#include "wx/things/range.h"
+#include "wxcode/plotctrl/plotdefs.h"
+#include "wxcode/plotctrl/plotmark.h"
+#include "wxcode/things/genergdi.h"
+#include "wxcode/things/range.h"
 
 class WXDLLEXPORT wxDC;
 

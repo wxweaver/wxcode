@@ -18,7 +18,7 @@
     //#include "wx/object.h"
 #endif // WX_PRECOMP
 
-#include "wx/things/block.h"
+#include "wxcode/things/block.h"
 
 // use this to check to see if there is any overlap after minimizing
 //#define CHECK_BLOCK_OVERLAP 1

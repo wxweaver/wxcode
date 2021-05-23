@@ -35,7 +35,7 @@
 
 #include "wx/filefn.h"     // wxStat
 
-#include "wx/things/filebrws.h"
+#include "wxcode/things/filebrws.h"
 
 #include "wx/arrimpl.cpp"
 WX_DEFINE_OBJARRAY(wxArrayFileData);

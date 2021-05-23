@@ -16,8 +16,8 @@
 #endif
 
 #include "wx/clntdata.h"
-#include "wx/things/genergdi.h"
-#include "wx/plotctrl/plotdefs.h"
+#include "wxcode/things/genergdi.h"
+#include "wxcode/plotctrl/plotdefs.h"
 
 class WXDLLIMPEXP_PLOTCTRL wxPlotCurve;
 

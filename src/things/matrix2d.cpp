@@ -13,7 +13,7 @@
     #pragma hdrstop
 #endif
 
-#include "wx/things/matrix2d.h"
+#include "wxcode/things/matrix2d.h"
 
 #ifndef WX_PRECOMP
     #include "wx/object.h"

@@ -109,7 +109,7 @@ double atanh(double x)
 #endif
 
 
-#include "wx/plotctrl/fparser.h"
+#include "wxcode/plotctrl/fparser.h"
 #include "fparser.hh"
 #include "fpconfig.hh"
 #include "fptypes.hh"

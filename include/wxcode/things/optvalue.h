@@ -10,7 +10,7 @@
 #ifndef __WXOPTIONVALUE_H__
 #define __WXOPTIONVALUE_H__
 
-#include "wx/things/thingdef.h"
+#include "wxcode/things/thingdef.h"
 class WXDLLIMPEXP_THINGS wxOptionValue;
 
 #include "wx/dynarray.h"

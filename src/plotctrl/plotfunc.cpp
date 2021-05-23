@@ -27,8 +27,8 @@
     #include "wx/dataobj.h"
 #endif // WX_PRECOMP
 
-#include "wx/plotctrl/plotfunc.h"
-#include "wx/plotctrl/fparser.h"
+#include "wxcode/plotctrl/plotfunc.h"
+#include "wxcode/plotctrl/fparser.h"
 #include <math.h>
 
 const wxPlotFunction wxNullPlotFunction;

@@ -22,8 +22,8 @@
 #endif // WX_PRECOMP
 
 #include "wx/timer.h"
-#include "wx/things/dropdown.h"
-#include "wx/things/toggle.h"
+#include "wxcode/things/dropdown.h"
+#include "wxcode/things/toggle.h"
 #include "wx/renderer.h"
 
 #if wxUSE_POPUPWIN

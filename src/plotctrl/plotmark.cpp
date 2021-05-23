@@ -25,8 +25,8 @@
 
 #include "wx/image.h"
 
-#include "wx/plotctrl/plotmark.h"
-#include "wx/plotctrl/plotctrl.h"
+#include "wxcode/plotctrl/plotmark.h"
+#include "wxcode/plotctrl/plotctrl.h"
 
 #include "wx/arrimpl.cpp"
 WX_DEFINE_OBJARRAY( wxArrayPlotMarker );

@@ -37,8 +37,8 @@
 #include "wx/math.h"
 #include "wx/image.h"
 
-#include "wx/plotctrl/plotctrl.h"
-#include "wx/plotctrl/plotdraw.h"
+#include "wxcode/plotctrl/plotctrl.h"
+#include "wxcode/plotctrl/plotdraw.h"
 
 #include <math.h>
 #include <float.h>
@@ -75,11 +75,10 @@ WX_DEFINE_OBJARRAY( wxArrayPoint2DDouble );
 WX_DEFINE_OBJARRAY( wxArrayRect2DDouble );
 WX_DEFINE_OBJARRAY( wxArrayPlotCurve );
 
-#include "../art/ledgrey.xpm"
-#include "../art/ledgreen.xpm"
-
-#include "../art/hand.xpm"
-#include "../art/grab.xpm"
+#include "wxcode/plotctrl/ledgrey.xpm"
+#include "wxcode/plotctrl/ledgreen.xpm"
+#include "wxcode/plotctrl/hand.xpm"
+#include "wxcode/plotctrl/grab.xpm"
 
 static wxCursor s_handCursor;
 static wxCursor s_grabCursor;

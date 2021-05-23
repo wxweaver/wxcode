@@ -19,7 +19,7 @@
 #endif // WX_PRECOMP
 
 #include "wx/tooltip.h"
-#include "wx/things/spinctld.h"
+#include "wxcode/things/spinctld.h"
 #include <math.h>
 
 #if wxCHECK_VERSION(2,5,0)

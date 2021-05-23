@@ -16,7 +16,7 @@
 #endif
 
 #include "wx/print.h"
-#include "wx/plotctrl/plotdefs.h"
+#include "wxcode/plotctrl/plotdefs.h"
 
 class WXDLLIMPEXP_PLOTCTRL wxPlotCtrl;
 

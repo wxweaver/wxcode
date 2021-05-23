@@ -26,7 +26,7 @@
     #pragma hdrstop
 #endif
 
-#include "wx/plotctrl/plotdefs.h"
+#include "wxcode/plotctrl/plotdefs.h"
 
 class WXDLLEXPORT wxString;
 class FunctionParser;

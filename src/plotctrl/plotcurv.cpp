@@ -24,7 +24,7 @@
     #include "wx/dcmemory.h"
 #endif // WX_PRECOMP
 
-#include "wx/plotctrl/plotcurv.h"
+#include "wxcode/plotctrl/plotcurv.h"
 
 const wxRect2DDouble wxNullPlotBounds(0, 0, 0, 0);
 

@@ -26,7 +26,7 @@
     #include "wx/scrolwin.h"
 #endif // WX_PRECOMP
 
-#include "wx/things/bmpcombo.h"
+#include "wxcode/things/bmpcombo.h"
 
 #if wxUSE_POPUPWIN
 

@@ -15,7 +15,7 @@
     #pragma interface "plotfunc.h"
 #endif
 
-#include "wx/plotctrl/plotcurv.h"
+#include "wxcode/plotctrl/plotcurv.h"
 
 class WXDLLIMPEXP_PLOTCTRL wxPlotFunction;
 

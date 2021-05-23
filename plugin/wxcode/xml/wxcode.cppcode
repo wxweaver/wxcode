@@ -79,7 +79,7 @@
 	<templates class="wxcode::wxTreeListCtrl">
 		<template name="declaration">#class* $name;</template>
 		<template name="include">
-			@#include &lt;wx/treelistctrl/treelistctrl.h&gt;
+			@#include &lt;wxcode/treelistctrl/treelistctrl.h&gt;
 			#ifnotnull $column_image_size
 			@{
 				#nl @#include &lt;wx/imaglist.h&gt;
@@ -179,7 +179,7 @@
 			#ifnotnull $key_font @{ $name->SetKeyFont( $key_font ); #nl @}
 			#ifnotnull $key_colour @{ $name->SetKeyColour( $key_colour ); #nl @}
 		</template>
-		<template name="include">@#include &lt;wx/plotctrl/plotctrl.h&gt;</template>
+		<template name="include">@#include &lt;wxcode/plotctrl/plotctrl.h&gt;</template>
 	</templates>
 
 	<templates class="awxLed">
@@ -189,7 +189,7 @@
 		    #ifnotnull $state
 			  @{ #nl $name->SetState( $state ); @}
 		</template>
-		<template name="include">@#include &lt;wx/awx/led.h&gt;</template>
+		<template name="include">@#include &lt;wxcode/awx/led.h&gt;</template>
 	</templates>
 	
 	<templates class="wxLedBarGraph">
@@ -204,7 +204,7 @@
 			$name->SetMaxValue( $max_value ); #nl
 			$name->SetMinValue( $min_value ); #nl
 		</template>
-		<template name="include">@#include &lt;wx/ledbargraph/ledbargraph.h&gt;</template>
+		<template name="include">@#include &lt;wxcode/ledbargraph/ledbargraph.h&gt;</template>
 	</templates>
 	
 </codegen>
