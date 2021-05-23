@@ -19,7 +19,7 @@ enum ledBGSizeMode{
     ledBG_FIXED_BAR_SIZE
 };
 /*
-	class ledBarGraph - simple wxControl that simulates an LED Bar Graph with multiple colors
+	class ledbargraph - simple wxControl that simulates an LED Bar Graph with multiple colors
 */
 class wxLedBarGraph :	public wxControl
 {

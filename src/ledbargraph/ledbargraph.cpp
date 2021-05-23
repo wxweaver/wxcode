@@ -1,4 +1,5 @@
-#include "wx/ledBarGraph/ledBarGraph.h"
+#include "wx/ledbargraph/ledbargraph.h"
+
 BEGIN_EVENT_TABLE(wxLedBarGraph, wxControl)
 	EVT_PAINT(wxLedBarGraph::OnPaint)
 	EVT_ERASE_BACKGROUND(wxLedBarGraph::OnEraseBackGround)

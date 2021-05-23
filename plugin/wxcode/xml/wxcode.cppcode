@@ -204,7 +204,7 @@
 			$name->SetMaxValue( $max_value ); #nl
 			$name->SetMinValue( $min_value ); #nl
 		</template>
-		<template name="include">@#include &lt;wx/ledBarGraph/ledBarGraph.h&gt;</template>
+		<template name="include">@#include &lt;wx/ledbargraph/ledbargraph.h&gt;</template>
 	</templates>
 	
 </codegen>

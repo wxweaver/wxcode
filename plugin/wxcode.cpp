@@ -30,7 +30,7 @@
 
 #include <wx/plotctrl/plotctrl.h>
 #include <wx/awx/led.h>
-#include <wx/ledBarGraph/ledBarGraph.h>
+#include <wx/ledbargraph/ledbargraph.h>
 #include <wx/treelistctrl/treelistctrl.h>
 
 // wxFlatNotebook

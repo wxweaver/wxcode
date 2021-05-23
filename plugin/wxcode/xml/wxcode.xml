@@ -194,7 +194,7 @@
 		</property>
 	</objectinfo>
 
-	<objectinfo class="wxLedBarGraph" icon="ledBarGraph.xpm" type="widget">
+	<objectinfo class="wxLedBarGraph" icon="ledbargraph.xpm" type="widget">
 		<inherits class="wxAdditions" />
 		<inherits class="wxWindow" />
 		<inherits class="AUI" />
