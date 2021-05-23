@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<package name="wxCode" lib="libwxadditions" icon="plot16x16.png" desc="wxWidgets contributed controls">
+<package name="wxCode" lib="libwxcode" icon="wxcode.png" desc="wxWidgets contributed controls">
 
 	<!-- All wxCode inherit this class so that the linker header will be included -->
 	<objectinfo class="wxCode" type="interface">
-		<property name="use_wxAddition" type="bool" help="Use the wxAddition library.">1</property>
+		<property name="use_wxcode" type="bool" help="Use the wxCode library.">1</property>
 	</objectinfo>
 	
-	<objectinfo class="wxFlatNotebook" icon="flatnotebook.xpm" type="flatnotebook">
+	<objectinfo class="wxFlatNotebook" icon="flatnotebook.png" type="flatnotebook">
 		<inherits class="wxCode" />
 		<inherits class="wxWindow">
 			<property name="bg">wxSYS_COLOUR_BTNFACE</property>
@@ -53,13 +53,13 @@
 		<event name="OnFlatNotebookPageContextMenu" class="wxFlatNotebookEvent" help="The context menu was activated. Processes a wxEVT_COMMAND_FLATNOTEBOOK_CONTEXT_MENU event." />
 	</objectinfo>
 
-	<objectinfo class="flatnotebookpage" icon="flatnotebook.xpm" type="flatnotebookpage">
+	<objectinfo class="flatnotebookpage" icon="flatnotebook.png" type="flatnotebookpage">
 		<property name="label" type="wxString_i18n" help="The title of the page">a page</property>
 		<property name="bitmap" type="bitmap" help="Page Image"/>
 		<property name="select" type="bool" help="Select Page when Adding">0</property>
 	</objectinfo>
 	
-	<objectinfo class="wxcode::wxTreeListCtrl" icon="treelistctrl.xpm" type="treelistctrl" startgroup="1">
+	<objectinfo class="wxcode::wxTreeListCtrl" icon="treelistctrl.png" type="treelistctrl" startgroup="1">
 		<inherits class="wxCode" />
 		<inherits class="wxTreeCtrlBase" />
 		<inherits class="wxWindow" />
@@ -87,7 +87,7 @@
 		</property>
 	</objectinfo>
 	
-	<objectinfo class="wxcode::wxTreeListCtrlColumn" icon="treelistctrlcolumn.xpm" type="treelistctrlcolumn">
+	<objectinfo class="wxcode::wxTreeListCtrlColumn" icon="treelistctrlcolumn.png" type="treelistctrlcolumn">
 		<property name="name" type="wxString_i18n" help="The title of the column">Column</property>
 		<property name="width" type="uint" help="Column size.">100</property>
 		<property name="alignment"	type="option" help="Verticle alignment of column text. This includes the label text.">
@@ -112,7 +112,7 @@
 		<property name="choices" type="stringlist" help="Available choices for Choice and Combo editors."></property>
 	</objectinfo>
 	
-	<objectinfo class="wxPlotCtrl" icon="plot.xpm" type="expanded_widget" startgroup="1">
+	<objectinfo class="wxPlotCtrl" icon="plot.png" type="expanded_widget" startgroup="1">
 		<inherits class="wxCode" />
 		<inherits class="wxWindow" />
 		<inherits class="AUI" />
@@ -175,7 +175,7 @@
 		</category>
 	</objectinfo>
 
-	<objectinfo class="awxLed" icon="awxled.xpm" type="widget">
+	<objectinfo class="awxLed" icon="awxled.png" type="widget">
 		<inherits class="wxCode" />
 		<inherits class="wxWindow" />
 		<inherits class="AUI" />
@@ -194,7 +194,7 @@
 		</property>
 	</objectinfo>
 
-	<objectinfo class="wxLedBarGraph" icon="ledbargraph.xpm" type="widget">
+	<objectinfo class="wxLedBarGraph" icon="ledbargraph.png" type="widget">
 		<inherits class="wxCode" />
 		<inherits class="wxWindow" />
 		<inherits class="AUI" />
