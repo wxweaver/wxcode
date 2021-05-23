@@ -1,0 +1,5 @@
+/.vscode
+/*build*/
+/*.diff
+/*.user
+compile_commands.json
