@@ -56,7 +56,7 @@
 
 #include "wx/treelistctrl/treelistctrl.h"
 
-namespace wxadditions 
+namespace wxcode 
 {
 	// ---------------------------------------------------------------------------
 	// array types

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<package name="wxAdditions" lib="libwxadditions" icon="plot16x16.png" desc="wxWidgets contributed controls">
+<package name="wxCode" lib="libwxadditions" icon="plot16x16.png" desc="wxWidgets contributed controls">
 
-	<!-- All wxAdditions inherit this class so that the linker header will be included -->
-	<objectinfo class="wxAdditions" type="interface">
+	<!-- All wxCode inherit this class so that the linker header will be included -->
+	<objectinfo class="wxCode" type="interface">
 		<property name="use_wxAddition" type="bool" help="Use the wxAddition library.">1</property>
 	</objectinfo>
 	
 	<objectinfo class="wxFlatNotebook" icon="flatnotebook.xpm" type="flatnotebook">
-		<inherits class="wxAdditions" />
+		<inherits class="wxCode" />
 		<inherits class="wxWindow">
 			<property name="bg">wxSYS_COLOUR_BTNFACE</property>
 		</inherits>
@@ -59,8 +59,8 @@
 		<property name="select" type="bool" help="Select Page when Adding">0</property>
 	</objectinfo>
 	
-	<objectinfo class="wxadditions::wxTreeListCtrl" icon="treelistctrl.xpm" type="treelistctrl" startgroup="1">
-		<inherits class="wxAdditions" />
+	<objectinfo class="wxcode::wxTreeListCtrl" icon="treelistctrl.xpm" type="treelistctrl" startgroup="1">
+		<inherits class="wxCode" />
 		<inherits class="wxTreeCtrlBase" />
 		<inherits class="wxWindow" />
 		<inherits class="AUI" />
@@ -87,7 +87,7 @@
 		</property>
 	</objectinfo>
 	
-	<objectinfo class="wxadditions::wxTreeListCtrlColumn" icon="treelistctrlcolumn.xpm" type="treelistctrlcolumn">
+	<objectinfo class="wxcode::wxTreeListCtrlColumn" icon="treelistctrlcolumn.xpm" type="treelistctrlcolumn">
 		<property name="name" type="wxString_i18n" help="The title of the column">Column</property>
 		<property name="width" type="uint" help="Column size.">100</property>
 		<property name="alignment"	type="option" help="Verticle alignment of column text. This includes the label text.">
@@ -113,7 +113,7 @@
 	</objectinfo>
 	
 	<objectinfo class="wxPlotCtrl" icon="plot.xpm" type="expanded_widget" startgroup="1">
-		<inherits class="wxAdditions" />
+		<inherits class="wxCode" />
 		<inherits class="wxWindow" />
 		<inherits class="AUI" />
 		<property name="name" type="text">m_plotCtrl</property>
@@ -176,7 +176,7 @@
 	</objectinfo>
 
 	<objectinfo class="awxLed" icon="awxled.xpm" type="widget">
-		<inherits class="wxAdditions" />
+		<inherits class="wxCode" />
 		<inherits class="wxWindow" />
 		<inherits class="AUI" />
 		<property name="name" type="text" >m_awxLed</property>
@@ -195,7 +195,7 @@
 	</objectinfo>
 
 	<objectinfo class="wxLedBarGraph" icon="ledbargraph.xpm" type="widget">
-		<inherits class="wxAdditions" />
+		<inherits class="wxCode" />
 		<inherits class="wxWindow" />
 		<inherits class="AUI" />
 		<property name="name" type="text" >m_ledbg</property>

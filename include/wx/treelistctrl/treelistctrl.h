@@ -40,7 +40,7 @@
 #include <wx/listctrl.h> // for wxListEvent
 #include <wx/arrstr.h>
 
-namespace wxadditions 
+namespace wxcode 
 {
 	class WXDLLIMPEXP_TREELISTCTRL wxTreeListItem;
 	class WXDLLIMPEXP_TREELISTCTRL wxTreeListHeaderWindow;
