@@ -28,8 +28,8 @@ MainWindow::MainWindow(wxWindow* parent, wxWindowID id, const wxString& title,
     m_ledbgL->SetOrientation(wxHORIZONTAL);
     m_ledbgL->SetBarWidths(8);
     m_ledbgR->SetBarWidths(8);
-    m_ledbgL->SetNBars(28);
-    m_ledbgR->SetNBars(28);
+    m_ledbgL->SetBarCount(28);
+    m_ledbgR->SetBarCount(28);
     m_ledbgL->SetMinValue(-10);
     m_ledbgR->SetMinValue(-10);
     m_ledbgL->SetMaxValue(10);

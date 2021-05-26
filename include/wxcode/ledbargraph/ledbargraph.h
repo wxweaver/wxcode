@@ -42,7 +42,7 @@ public:
     void SetMinValue(double val);
     void SetValue(double val);
 
-    void SetNBars(int nBars);
+    void SetBarCount(int barCount);
     void SetBarWidths(int width);
 
 private:
@@ -54,7 +54,7 @@ private:
 
     void Init()
     {
-        m_nBars = 25;
+        m_barCount = 25;
         m_barWidths = 6;
 
         m_value = 0;
@@ -100,7 +100,7 @@ private:
 
     // Only one of these works at a time, if the wrong sizingMode is selected,
     // the set methods will ignore your input.
-    int m_nBars;     // Around 25 looks good most places
+    int m_barCount;  // Around 25 looks good most places
     int m_barWidths; // 6 looks good
 
     int m_startX;

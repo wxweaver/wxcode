@@ -16,7 +16,7 @@ if(${wxWidgets_FOUND})
     )
     target_link_libraries(${CMAKE_PROJECT_NAME}
         ${wxWidgets_LIBRARIES}
-        wxcode
+        wx_code
     )
     message(STATUS "
 ${CMAKE_CURRENT_SOURCE_DIR}

@@ -26,29 +26,29 @@ void wxLedBarGraph::OnResize(wxSizeEvent&)
     wxRect rect = GetClientRect();
     if (m_sizingMode == wxLED_BG_FIXED_BAR_COUNT) {
         if (m_orientation == wxHORIZONTAL)
-            m_barWidths = (rect.width / m_nBars);
+            m_barWidths = (rect.width / m_barCount);
         else
-            m_barWidths = (rect.height / m_nBars);
+            m_barWidths = (rect.height / m_barCount);
 
         if (m_barWidths < 6)
             return; // things less than 6 don't look that good, so you get a black box.
     } else {
         if (m_orientation == wxHORIZONTAL)
-            m_nBars = rect.width / m_barWidths;
+            m_barCount = rect.width / m_barWidths;
         else
-            m_nBars = rect.height / m_barWidths;
+            m_barCount = rect.height / m_barWidths;
 
-        if ((m_nBars % 2) == 1)
-            m_nBars--;
+        if ((m_barCount % 2) == 1)
+            m_barCount--;
     }
     /*
         This figures out the gutters.  because of how i calculate width
         and how I draw the rects, there is some error that I center in the control...
     */
     if (m_orientation == wxHORIZONTAL)
-        m_startX = (rect.width - (m_nBars * m_barWidths)) / 2;
+        m_startX = (rect.width - (m_barCount * m_barWidths)) / 2;
     else
-        m_startX = (rect.height - (m_nBars * m_barWidths)) / 2;
+        m_startX = (rect.height - (m_barCount * m_barWidths)) / 2;
 
     Refresh();
 }
@@ -66,30 +66,30 @@ void wxLedBarGraph::OnPaint(wxPaintEvent&)
     wxBrush blackBrush = wxBrush(wxColour("black"));
     wxColor tmpColor;
 
-    int cntr = m_nBars / 2;
+    int cntr = m_barCount / 2;
     int minG = 0; // = -1;
-    int maxG = 0; // =  (m_nBars / 4);
+    int maxG = 0; // =  (m_barCount / 4);
     int minY = -1;
     int maxY = 1;
 
     if (m_mode == wxLED_BG_DOUBLE_SIDED) {
-        minG = cntr - (m_nBars / 8);
-        maxG = cntr + (m_nBars / 8);
+        minG = cntr - (m_barCount / 8);
+        maxG = cntr + (m_barCount / 8);
 
-        minY = cntr - 3 * (m_nBars / 8);
-        maxY = cntr + 3 * (m_nBars / 8);
+        minY = cntr - 3 * (m_barCount / 8);
+        maxY = cntr + 3 * (m_barCount / 8);
     } else if (m_mode == wxLED_BG_SINGLE_SIDED_TOP_LEFT) {
         minG = -1;
-        maxG = (m_nBars / 4);
+        maxG = (m_barCount / 4);
 
-        minY = (m_nBars / 4) - 1;
-        maxY = 3 * (m_nBars / 4);
+        minY = (m_barCount / 4) - 1;
+        maxY = 3 * (m_barCount / 4);
     } else if (m_mode == wxLED_BG_SINGLE_SIDED_BOTTOM_RIGHT) {
-        minG = 3 * (m_nBars / 4);
-        maxG = m_nBars;
+        minG = 3 * (m_barCount / 4);
+        maxG = m_barCount;
 
-        minY = (m_nBars / 4) - 1;
-        maxY = 3 * (m_nBars / 4);
+        minY = (m_barCount / 4) - 1;
+        maxY = 3 * (m_barCount / 4);
     }
     int X = m_startX;
 
@@ -102,15 +102,15 @@ void wxLedBarGraph::OnPaint(wxPaintEvent&)
 
     int thold = 0;
     int i;
-    for (i = 0; i < m_nBars; i++) {
+    for (i = 0; i < m_barCount; i++) {
         //double dim = .7;
         bool maxedOut = false;
         bool drawMe = false;
 
         if (m_mode == wxLED_BG_DOUBLE_SIDED) {
             if (m_value < 0) {
-                thold = (int)((m_nBars / 2) - (fabs(m_value) * (m_nBars / 2)));
-                drawMe = (i >= thold) && (i <= (m_nBars / 2));
+                thold = (int)((m_barCount / 2) - (fabs(m_value) * (m_barCount / 2)));
+                drawMe = (i >= thold) && (i <= (m_barCount / 2));
 
                 if (m_value > -1)
                     maxedOut = false;
@@ -118,11 +118,11 @@ void wxLedBarGraph::OnPaint(wxPaintEvent&)
                     maxedOut = true;
 
             } else if (m_value == 0) {
-                drawMe = (i == m_nBars / 2);
+                drawMe = (i == m_barCount / 2);
                 maxedOut = true;
             } else if (m_value > 0) {
-                thold = (int)((m_nBars / 2) + (fabs(m_value) * (m_nBars / 2) + 1));
-                drawMe = (i <= thold) && (i >= (m_nBars / 2));
+                thold = (int)((m_barCount / 2) + (fabs(m_value) * (m_barCount / 2) + 1));
+                drawMe = (i <= thold) && (i >= (m_barCount / 2));
 
                 if (m_value < 1)
                     maxedOut = false;
@@ -138,19 +138,19 @@ void wxLedBarGraph::OnPaint(wxPaintEvent&)
             if (m_value <= -1) {
                 if (i == 0) {
                     maxedOut = true;
-                    drawMe = true; // ( i <= m_nBars );
+                    drawMe = true; // ( i <= m_barCount );
                 }
             } else if (m_value >= 1) {
-                maxedOut = (i == m_nBars - 1);
+                maxedOut = (i == m_barCount - 1);
                 drawMe = true;
             } else {
                 maxedOut = false;
-                thold = (int)(m_nBars - ((m_nBars / 2) + (-m_value * (m_nBars / 2))));
+                thold = (int)(m_barCount - ((m_barCount / 2) + (-m_value * (m_barCount / 2))));
                 drawMe = (i <= thold);
             }
         } else if (m_mode == wxLED_BG_SINGLE_SIDED_BOTTOM_RIGHT) {
             if (m_value <= -1) {
-                if (i == m_nBars - 1) {
+                if (i == m_barCount - 1) {
                     drawMe = true;
                     maxedOut = true;
                 }
@@ -159,7 +159,7 @@ void wxLedBarGraph::OnPaint(wxPaintEvent&)
                 drawMe = true;
             } else {
                 maxedOut = false;
-                thold = (int)((m_nBars / 2) + (-m_value * (m_nBars / 2)));
+                thold = (int)((m_barCount / 2) + (-m_value * (m_barCount / 2)));
                 drawMe = (i >= thold);
             }
         }
@@ -177,7 +177,7 @@ void wxLedBarGraph::OnPaint(wxPaintEvent&)
             //led off
             dim = .15;
         } else if (maxedOut
-                   && ((i == m_nBars - 1 || i == 0) || (i == m_nBars / 2))
+                   && ((i == m_barCount - 1 || i == 0) || (i == m_barCount / 2))
                    && (m_mode == wxLED_BG_DOUBLE_SIDED)) {
             //max it out, dude!
             dim = 1;
@@ -225,15 +225,21 @@ void wxLedBarGraph::SetValue(double val)
     RescaleValues();
 }
 
-void wxLedBarGraph::SetNBars(int nBars)
+void wxLedBarGraph::SetBarCount(int barCount)
 {
-    m_nBars = nBars;
+    if (barCount < 1)
+        return;
+
+    m_barCount = barCount;
 
     wxSizeEvent b;
     OnResize(b);
 }
 void wxLedBarGraph::SetBarWidths(int width)
 {
+    if (width < 1)
+        return;
+
     m_barWidths = width;
 
     wxSizeEvent b;
