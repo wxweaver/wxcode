@@ -63,7 +63,7 @@ if(${wxWidgets_FOUND})
         )
         install(DIRECTORY
             "${CMAKE_CURRENT_SOURCE_DIR}/plugin/wxcode"
-            DESTINATION "${CMAKE_INSTALL_DATADIR}/wxweaver/plugins/wxcode"
+            DESTINATION "${CMAKE_INSTALL_DATADIR}/wxweaver/plugins"
         )
     endif()
     message(STATUS "
