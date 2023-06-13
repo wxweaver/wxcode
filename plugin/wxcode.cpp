@@ -23,9 +23,9 @@
 #include <xrcconv.h>
 #include <default.xpm>
 
+#if 0
 #include <wxcode/plotctrl/plotctrl.h>
 #include <math.h>
-#if 0
 #include <wxcode/treelistctrl/treelistctrl.h>
 #endif
 
@@ -234,7 +234,7 @@ void TreeListCtrlEvtHandler::OnLeftDClick(wxMouseEvent& event)
         }
     }
 }
-#endif
+
 class PlotCtrlComponent : public ComponentBase {
 public:
     wxObject* Create(IObject* obj, wxObject* parent)
@@ -328,7 +328,7 @@ public:
     }
 #endif
 };
-
+#endif
 class awxLedComponent : public ComponentBase {
 public:
     wxObject* Create(IObject* obj, wxObject* parent)
@@ -374,6 +374,7 @@ public:
 
 BEGIN_LIBRARY()
 
+#if 0
 // wxPlotWindow
 WINDOW_COMPONENT("wxPlotCtrl", PlotCtrlComponent)
 MACRO(wxPLOTCTRL_MOUSE_NOTHING)
@@ -386,7 +387,6 @@ MACRO(wxPLOTCTRL_MARKER_RECT)
 MACRO(wxPLOTCTRL_MARKER_VERT)
 MACRO(wxPLOTCTRL_MARKER_HORIZ)
 
-#if 0
 // wxTreeListCtrl
 WINDOW_COMPONENT("wxcode::wxTreeListCtrl", wxTreeListCtrlComponent)
 MACRO(wxTR_EDIT_LABELS)
