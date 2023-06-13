@@ -5,15 +5,15 @@ find_package(wxWidgets 3.0.3 REQUIRED gl core base)
 if(${wxWidgets_FOUND})
     include(${wxWidgets_USE_FILE})
 
-    # wxCode components library
-    set(COMPONENTS_FILES
-        include/wxcode/awx/led.h
-        include/wxcode/ledbargraph/ledbargraph.h
-        include/wxcode/plotctrl/plotctrl.h
+    # Probably to discard, too old code
+    set(wxTHINGS_SOURCES
         include/wxcode/things/genergdi.h
         include/wxcode/things/range.h
-        src/awx/led.cpp
-        src/ledbargraph/ledbargraph.cpp
+        src/things/genergdi.cpp
+        src/things/range.cpp
+    )
+    set(wxPLOTCTRL_SOURCES
+        include/wxcode/plotctrl/plotctrl.h
         src/plotctrl/fourier.c
         src/plotctrl/fparser.cpp
         src/plotctrl/fpoptimizer.cpp
@@ -25,8 +25,13 @@ if(${wxWidgets_FOUND})
         src/plotctrl/plotfunc.cpp
         src/plotctrl/plotmark.cpp
         src/plotctrl/plotprnt.cpp
-        src/things/genergdi.cpp
-        src/things/range.cpp
+    )
+    # wxCode components library
+    set(COMPONENTS_FILES
+        include/wxcode/awx/led.h
+        include/wxcode/ledbargraph/ledbargraph.h
+        src/awx/led.cpp
+        src/ledbargraph/ledbargraph.cpp
     )
     add_library(${CMAKE_PROJECT_NAME} SHARED ${COMPONENTS_FILES})
     target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
